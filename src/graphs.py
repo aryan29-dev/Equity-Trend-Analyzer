@@ -4,7 +4,7 @@ import pandas as pd
 
 def price_chart(close_prices, ma_short, ma_long, short_days, long_days):
     
-    fig = plt.figure()
+    fig = plt.figure(figsize=(12, 10))
     
     close_prices = close_prices.copy()
     close_prices.index = pd.to_datetime(close_prices.index)
@@ -39,7 +39,7 @@ def price_chart(close_prices, ma_short, ma_long, short_days, long_days):
 
 def rsi_chart(rsi_values):
 
-    fig = plt.figure()
+    fig = plt.figure(figsize=(12, 10))
     
     rsi_values = rsi_values.copy()
     rsi_values.index = pd.to_datetime(rsi_values.index)
